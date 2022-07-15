@@ -8,7 +8,7 @@
 5. Create a new ECR repository by running `aws ecr create-repository --repository-name ph-webscrapper --image-scanning-configuration scanOnPush=true`
 6. Authenticate your local machine so it can push images to your repostiroy by running `aws ecr get-login-password | docker login --username AWS --password-stdin <your_registry_id>.dkr.ecr.ap-southeast-2.amazonaws.com`
 7. Point your Docker image to your new repository `docker tag ph-webscrapper:latest <your_registry_id>.dkr.ecr.ap-southeast-2.amazonaws.com/ph-webscrapper:latest`
-8. And push it `docker push <your_registry_id>.dkr.ecr.ap-southeast-2.amazonaws.com/lambda-docker-flask:latest`
+8. And push it `docker push <your_registry_id>.dkr.ecr.ap-southeast-2.amazonaws.com/ph-webscrapper:latest`
 
 
 ## Deploying with Zappa
