@@ -4,7 +4,8 @@
         "aws_region": "ap-southeast-2",
         "profile_name": "default",
         "project_name": "ph-webscrapper",
-        "runtime": "python3.9",
-        "s3_bucket": "zappa-zno5y5zxe"
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-d72biiafg",
+        "layers":["arn:aws:lambda:ap-southeast-2:184949809469:layer:selenium_python_3_7:1"]
     }
 }
