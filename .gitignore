@@ -130,3 +130,5 @@ dmypy.json
 
 # zappa file
 zappa_settings.json
+
+.DS_Store
