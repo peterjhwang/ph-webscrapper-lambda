@@ -15,7 +15,7 @@ def selenium_get_gdp_url(year: str, month: str) -> str:
     csv_url = ''
     for el in DRIVER.find_elements(by=By.XPATH, value='//div[@class="block-document__container"]/a'):
         temp_url = el.get_attribute('href')
-        if 'csv' in temp_url and 'visualisation' not in temp_url:
+        if 'csv' in temp_url and 'visualisation' in temp_url:
             csv_url = temp_url
             break
     return csv_url
